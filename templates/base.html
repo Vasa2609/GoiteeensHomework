@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+{% block titlee %}
+Створити Cписок
+{% endblock %}
+
+
+{% block content %}
+<div>
+    <p>Добавлення нової статі</p>
+    <form method="post">
+        <input type="text" name="title" class="form-control"/>
+        <textarea name="intro" id="intro" class="form-control"></textarea>
+        <textarea name="text" id="text" class="form-control"></textarea>
+        <input type="submit" class="btn btn-success">
+    </form>
+</div>
+{% endblock %}
+</body>
+</html>
